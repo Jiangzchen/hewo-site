@@ -25,6 +25,7 @@ org\hewo\core\utils\ThreadLocalGroup.class
 org\hewo\core\model\entity\R.class
 org\hewo\core\exception\BusinessException.class
 org\hewo\modules\system\model\vo\SysUserVo.class
+org\hewo\core\model\entity\Test.class
 org\hewo\modules\article\service\ArticleService.class
 org\hewo\core\utils\JwtUtil.class
 org\hewo\modules\article\model\dto\ArticleSaveDto.class

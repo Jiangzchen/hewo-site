@@ -1,7 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba7c1f34-d6ae-4e40-9d1d-6918090d3ac9" name="Default Changelist" comment="" />
+    <list default="true" id="ba7c1f34-d6ae-4e40-9d1d-6918090d3ac9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hewo/core/support/filter/JwtAuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hewo/core/support/filter/JwtAuthFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hewo/modules/auth/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hewo/modules/auth/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hewo/modules/auth/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hewo/modules/auth/service/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hewo/modules/auth/service/impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hewo/modules/auth/service/impl/AuthServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/app.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/doc/AllInOne.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/doc/ArticleControllerApi.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/doc/ArticleControllerApi.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/doc/AuthController.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/doc/AuthControllerApi.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/doc/AuthControllerApi.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/doc/Dictionary.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/smart-doc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/doc/Dictionary.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/doc/ErrorCodeList.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/doc/ErrorCodeList.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/doc/SysLogController.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/doc/SysLogControllerApi.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/doc/SysLogControllerApi.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/doc/SysUserController.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/doc/SysUserControllerApi.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/doc/SysUserControllerApi.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/doc/api.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/doc/dict.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/doc/error.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/doc/font.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/doc/highlight.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/doc/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/doc/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/doc/xt256.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/archive-tmp/hewo-site.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/archive-tmp/hewo-site.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/hewo/core/support/filter/JwtAuthFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/hewo/core/support/filter/JwtAuthFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/hewo/modules/auth/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/hewo/modules/auth/controller/AuthController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/hewo/modules/auth/service/AuthService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/hewo/modules/auth/service/AuthService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/hewo/modules/auth/service/impl/AuthServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/hewo/modules/auth/service/impl/AuthServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/doc/AllInOne.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/doc/ArticleControllerApi.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/doc/ArticleControllerApi.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/doc/AuthController.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/doc/AuthControllerApi.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/doc/AuthControllerApi.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/doc/Dictionary.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/doc/Dictionary.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/doc/ErrorCodeList.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/doc/ErrorCodeList.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/doc/SysLogController.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/doc/SysLogControllerApi.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/doc/SysLogControllerApi.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/doc/SysUserController.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/doc/SysUserControllerApi.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/doc/SysUserControllerApi.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/doc/api.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/doc/dict.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/doc/error.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/doc/font.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/doc/highlight.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/doc/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/doc/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/doc/xt256.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/hewo-site.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/hewo-site.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +83,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -73,7 +142,7 @@
       <command value="mvn install" />
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.hewo.App" />
       <module name="hewo-site" />
@@ -87,6 +156,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="和我一键部署" type="DEPLOY_HOST_RUN_CONFIGURATION" factoryName="Deploy to Host">
+      <option name="accountModel" />
+      <option name="accountModels" />
+      <option name="address" />
+      <option name="afterCommand" value="/mnt/hewo/hewo-site/restart.sh" />
+      <option name="alreadyReset" value="true" />
+      <option name="autoOpen" value="false" />
+      <option name="beforeCommand" value="" />
+      <option name="defaultTabIdx" value="0" />
+      <option name="ecsInstance">
+        <EcsInstance>
+          <option name="OSType" />
+          <option name="instanceId" />
+          <option name="instanceName" />
+          <option name="netType" />
+          <option name="privateIps" />
+          <option name="publicIps" />
+          <option name="regionId" />
+          <option name="tags" />
+        </EcsInstance>
+      </option>
+      <option name="ecsInstances" />
+      <option name="hostIds">
+        <list>
+          <option value="3" />
+        </list>
+      </option>
+      <option name="hostTagId" value="0" />
+      <option name="location" value="/mnt/hewo/hewo-site" />
+      <option name="pathOrUrl" value="C:\Users\Tronksoft-P-K011\Desktop\_work\hewo-site\target\hewo-site.jar" />
+      <option name="tagId" value="0" />
+      <option name="terminalCommand" />
+      <option name="type" value="HOST" />
+      <option name="uploadType" value="MAVEN" />
+      <method v="2">
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="clean install" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.App" />
+      <item itemvalue="Deploy to Host.和我一键部署" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
@@ -111,6 +222,12 @@
       <workItem from="1666661509490" duration="597000" />
       <workItem from="1666758148169" duration="12437000" />
       <workItem from="1666831897007" duration="15664000" />
+      <workItem from="1667186776330" duration="156000" />
+      <workItem from="1667187725510" duration="282000" />
+      <workItem from="1667382550572" duration="757000" />
+      <workItem from="1667440610269" duration="8000" />
+      <workItem from="1667455312427" duration="1136000" />
+      <workItem from="1667472480395" duration="2233000" />
     </task>
     <servers />
   </component>
@@ -122,6 +239,10 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="574" y="201" key="#Project_Structure/62.0.1858.1080@62.0.1858.1080" timestamp="1666758897333" />
+    <state x="445" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1667472941807">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="445" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1667472941807" />
     <state x="796" y="248" key="#com.intellij.ide.util.MemberChooser" timestamp="1666867972410">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
@@ -130,46 +251,46 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="466" y="468" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1666846099476" />
-    <state width="558" height="466" key="DebuggerActiveHint" timestamp="1666871135740">
+    <state width="558" height="466" key="DebuggerActiveHint" timestamp="1667474712850">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="558" height="466" key="DebuggerActiveHint/62.0.1858.1080@62.0.1858.1080" timestamp="1666871135740" />
+    <state width="558" height="466" key="DebuggerActiveHint/62.0.1858.1080@62.0.1858.1080" timestamp="1667474712850" />
     <state x="770" y="298" key="FileChooserDialogImpl" timestamp="1666791919314">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="770" y="298" key="FileChooserDialogImpl/62.0.1858.1080@62.0.1858.1080" timestamp="1666791919314" />
-    <state width="1817" height="261" key="GridCell.Tab.0.bottom" timestamp="1666933801723">
+    <state width="1817" height="314" key="GridCell.Tab.0.bottom" timestamp="1667474721953">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1817" height="261" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1666933801723" />
-    <state width="1817" height="261" key="GridCell.Tab.0.center" timestamp="1666933801723">
+    <state width="1817" height="314" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1667474721953" />
+    <state width="1817" height="314" key="GridCell.Tab.0.center" timestamp="1667474721953">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1817" height="261" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1666933801723" />
-    <state width="1817" height="261" key="GridCell.Tab.0.left" timestamp="1666933801723">
+    <state width="1817" height="314" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1667474721953" />
+    <state width="1817" height="314" key="GridCell.Tab.0.left" timestamp="1667474721953">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1817" height="261" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1666933801723" />
-    <state width="1817" height="261" key="GridCell.Tab.0.right" timestamp="1666933801723">
+    <state width="1817" height="314" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1667474721953" />
+    <state width="1817" height="314" key="GridCell.Tab.0.right" timestamp="1667474721953">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1817" height="261" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1666933801723" />
-    <state width="1817" height="40" key="GridCell.Tab.1.bottom" timestamp="1666933801709">
+    <state width="1817" height="314" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1667474721953" />
+    <state width="1817" height="314" key="GridCell.Tab.1.bottom" timestamp="1667474658690">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1817" height="40" key="GridCell.Tab.1.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1666933801709" />
-    <state width="1817" height="40" key="GridCell.Tab.1.center" timestamp="1666933801707">
+    <state width="1817" height="314" key="GridCell.Tab.1.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1667474658690" />
+    <state width="1817" height="314" key="GridCell.Tab.1.center" timestamp="1667474658690">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1817" height="40" key="GridCell.Tab.1.center/62.0.1858.1080@62.0.1858.1080" timestamp="1666933801707" />
-    <state width="1817" height="40" key="GridCell.Tab.1.left" timestamp="1666933801706">
+    <state width="1817" height="314" key="GridCell.Tab.1.center/62.0.1858.1080@62.0.1858.1080" timestamp="1667474658690" />
+    <state width="1817" height="314" key="GridCell.Tab.1.left" timestamp="1667474658690">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1817" height="40" key="GridCell.Tab.1.left/62.0.1858.1080@62.0.1858.1080" timestamp="1666933801706" />
-    <state width="1817" height="40" key="GridCell.Tab.1.right" timestamp="1666933801708">
+    <state width="1817" height="314" key="GridCell.Tab.1.left/62.0.1858.1080@62.0.1858.1080" timestamp="1667474658690" />
+    <state width="1817" height="314" key="GridCell.Tab.1.right" timestamp="1667474658690">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1817" height="40" key="GridCell.Tab.1.right/62.0.1858.1080@62.0.1858.1080" timestamp="1666933801708" />
+    <state width="1817" height="314" key="GridCell.Tab.1.right/62.0.1858.1080@62.0.1858.1080" timestamp="1667474658690" />
     <state x="516" y="185" key="SettingsEditor" timestamp="1666660050353">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
@@ -186,19 +307,5 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="647" y="250" width="672" height="677" key="run.anything.popup/62.0.1858.1080@62.0.1858.1080" timestamp="1666660635544" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/org/hewo/modules/auth/controller/AuthController.java</url>
-          <line>27</line>
-          <properties class="org.hewo.modules.auth.controller.AuthController" method="toLogin">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

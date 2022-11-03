@@ -4,6 +4,7 @@ import org.hewo.core.controller.AbstractController;
 import org.hewo.core.model.entity.R;
 import org.hewo.core.model.request.ModelRequest;
 import org.hewo.modules.auth.model.dto.AuthDto;
+import org.hewo.modules.auth.model.vo.AuthVo;
 import org.hewo.modules.auth.service.AuthService;
 import org.noear.solon.annotation.Controller;
 import org.noear.solon.annotation.Inject;
@@ -21,7 +22,8 @@ public class AuthController extends AbstractController {
     @Post
     @Mapping("verifyAuth")
     private R verifyAuth(ModelRequest<AuthDto> req){
-        return authService.verifyAuth(req.getData());
+        AuthVo authVo = authService.verifyAuth(req.getData());
+        return R.ok("登录成功").data(authVo);
     }
 
     @Mapping("toLogin")

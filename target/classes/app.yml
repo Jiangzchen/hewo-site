@@ -1,7 +1,7 @@
-server.port: 8888
+server.port: 8909
 hewo.db:
   schema: rock
-  jdbcUrl: jdbc:mysql://localhost:3306/hewo-site?serverTimezone=UTC
+  jdbcUrl: jdbc:mysql://121.37.183.5:49154/hewo-site?serverTimezone=UTC
   driverClassName: com.mysql.cj.jdbc.Driver
   username: root
   password: root
@@ -15,7 +15,8 @@ mybatis.db:
   configuration:
     cacheEnabled: false
     mapUnderscoreToCamelCase: true
-    logImpl: org.apache.ibatis.logging.stdout.StdOutImpl
+    # org.apache.ibatis.logging.nologging.NoLoggingImpl关闭  org.apache.ibatis.logging.stdout.StdOutImpl开启
+    logImpl: org.apache.ibatis.logging.nologging.NoLoggingImpl
   globalConfig:
     banner: false
     metaObjectHandler: "org.hewo.core.support.dso.MetaObjectHandlerImpl"

@@ -18,7 +18,12 @@ public class JwtAuthFilter implements Filter {
     public void doFilter(Context ctx, FilterChain chain) throws Throwable {
         try {
             String token = ctx.header("Authorization");
-            if (ctx.path().contains("verifyAuth") || ctx.path().contains("test")) {
+            if (ctx.path().contains("verifyAuth")
+                    || ctx.path().contains("test")
+                    || ctx.path().contains("js")
+                    || ctx.path().contains("css")
+                    || ctx.path().contains("toLogin")
+                    || ctx.path().contains("images")) {
                 chain.doFilter(ctx);
             } else if (StrUtil.isEmpty(token)) {
                 throw new BusinessException(-1, "没有提供token");

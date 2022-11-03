@@ -1,8 +1,8 @@
 package org.hewo.modules.auth.service;
 
-import org.hewo.core.model.entity.R;
 import org.hewo.modules.auth.model.dto.AuthDto;
+import org.hewo.modules.auth.model.vo.AuthVo;
 
 public interface AuthService {
-    R verifyAuth(AuthDto req);
+    AuthVo verifyAuth(AuthDto req);
 }

@@ -87,7 +87,17 @@
     <build>
         <finalName>${project.name}</finalName>
         <plugins>
-
+            <!--<plugin>
+                <groupId>com.github.shalousun</groupId>
+                <artifactId>smart-doc-maven-plugin</artifactId>
+                <version>2.4.2</version>
+                <configuration>
+                    &lt;!&ndash;指定生成文档的使用的配置文件,配置文件放在自己的项目中&ndash;&gt;
+                    <configFile>./src/main/resources/smart-doc.json</configFile>
+                    &lt;!&ndash;指定项目名称&ndash;&gt;
+                    <projectName>测试</projectName>
+                </configuration>
+            </plugin>-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>

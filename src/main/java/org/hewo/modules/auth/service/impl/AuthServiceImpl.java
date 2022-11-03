@@ -5,7 +5,6 @@ import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import org.apache.ibatis.solon.annotation.Db;
 import org.hewo.core.exception.BusinessException;
-import org.hewo.core.model.entity.R;
 import org.hewo.core.utils.JwtUtil;
 import org.hewo.modules.auth.model.dto.AuthDto;
 import org.hewo.modules.auth.model.vo.AuthVo;
@@ -21,7 +20,7 @@ public class AuthServiceImpl implements AuthService {
     private SysUserMapper sysUserMapper;
 
     @Override
-    public R verifyAuth(AuthDto req) {
+    public AuthVo verifyAuth(AuthDto req) {
         QueryWrapper<SysUser> wrapper = new QueryWrapper<SysUser>().eq("username", req.getUserCode());
         SysUser sysUser = sysUserMapper.selectOne(wrapper);
 
@@ -37,6 +36,6 @@ public class AuthServiceImpl implements AuthService {
         authVo.setUserCode(sysUser.getUsername());
         String sign = JwtUtil.sign(sysUser.getId(), sysUser.getUsername());
         authVo.setToken(sign);
-        return R.ok("登录成功").data(authVo);
+        return authVo;
     }
 }
