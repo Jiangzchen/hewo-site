@@ -16,7 +16,7 @@ public class SysUser implements Serializable {
     private String mobile;
     private Integer status;
     private String remark;
-    private Long userIdCreate;
+    private String userIdCreate;
     private Date gmtCreate;
     private Date gmtModified;
 }

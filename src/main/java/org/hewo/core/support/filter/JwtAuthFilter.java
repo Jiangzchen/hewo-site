@@ -1,5 +1,6 @@
 package org.hewo.core.support.filter;
 
+import cn.hutool.core.text.StrSpliter;
 import cn.hutool.core.util.StrUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.hewo.core.exception.BusinessException;
@@ -11,19 +12,20 @@ import org.noear.solon.core.handle.Context;
 import org.noear.solon.core.handle.Filter;
 import org.noear.solon.core.handle.FilterChain;
 
+import java.util.Arrays;
+import java.util.List;
+
 @Slf4j
 @Component
 public class JwtAuthFilter implements Filter {
+
     @Override
     public void doFilter(Context ctx, FilterChain chain) throws Throwable {
         try {
             String token = ctx.header("Authorization");
-            if (ctx.path().contains("verifyAuth")
-                    || ctx.path().contains("test")
-                    || ctx.path().contains("js")
-                    || ctx.path().contains("css")
-                    || ctx.path().contains("toLogin")
-                    || ctx.path().contains("images")) {
+            boolean delf = isDelf(ctx);
+            log.info("请求的路径是{}",ctx.path());
+            if (delf) {
                 chain.doFilter(ctx);
             } else if (StrUtil.isEmpty(token)) {
                 throw new BusinessException(-1, "没有提供token");
@@ -49,5 +51,17 @@ public class JwtAuthFilter implements Filter {
             Object obj = R.error(100,var13.getMessage());
             ctx.render(obj);
         }
+    }
+
+    private boolean isDelf(Context ctx) {
+        List<String> auths = Arrays.asList("accessToken", "toLogin",".css",".js",".images",".ico");
+        boolean delf = false;
+        for (String auth : auths) {
+            if (ctx.path().endsWith(auth)) {
+                delf = true;
+                break;
+            }
+        }
+        return delf;
     }
 }

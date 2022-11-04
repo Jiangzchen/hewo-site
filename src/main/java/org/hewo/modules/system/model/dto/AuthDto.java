@@ -1,4 +1,4 @@
-package org.hewo.modules.auth.model.dto;
+package org.hewo.modules.system.model.dto;
 
 import lombok.Data;
 

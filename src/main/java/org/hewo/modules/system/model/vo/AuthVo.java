@@ -1,4 +1,4 @@
-package org.hewo.modules.auth.model.vo;
+package org.hewo.modules.system.model.vo;
 
 import lombok.Data;
 
