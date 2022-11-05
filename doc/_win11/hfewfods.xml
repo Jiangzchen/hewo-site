@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<service>
+  <id>rbpmanagerextends</id>
+  <name>rbpmanagerextends</name>
+  <description>rbp-managerextends</description>
+  <executable>%JAVA_HOME%\bin\java.exe</executable>
+  <arguments> -jar -server -Xms512m -Xmx1024m -Dfile.encoding=UTF-8 rbpmanagerextends.jar --spring.cloud.bootstrap.location=bootstrap.yml</arguments>
+  <startmode>Automatic</startmode>
+  <logmode>rotate</logmode>
+</service>
