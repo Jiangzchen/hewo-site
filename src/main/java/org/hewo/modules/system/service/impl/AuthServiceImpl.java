@@ -22,7 +22,7 @@ public class AuthServiceImpl implements AuthService {
     private SysUserMapper sysUserMapper;
 
     @Override
-    public R verifyAuth(AuthDto req) {
+    public R accessToken(AuthDto req) {
         QueryWrapper<SysUser> wrapper = new QueryWrapper<SysUser>().eq("username", req.getUserCode());
         SysUser sysUser = sysUserMapper.selectOne(wrapper);
 

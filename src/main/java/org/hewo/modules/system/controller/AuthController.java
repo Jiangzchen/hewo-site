@@ -20,8 +20,8 @@ public class AuthController extends AbstractController {
     private AuthService authService;
 
     @Mapping("accessToken")
-    private R verifyAuth(ModelRequest<AuthDto> req){
-        return authService.verifyAuth(req.getData());
+    private R accessToken(ModelRequest<AuthDto> req){
+        return authService.accessToken(req.getData());
     }
 
     @Mapping("toLogin")
