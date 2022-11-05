@@ -16,7 +16,7 @@ mybatis.db:
     cacheEnabled: false
     mapUnderscoreToCamelCase: true
     # org.apache.ibatis.logging.nologging.NoLoggingImpl关闭  org.apache.ibatis.logging.stdout.StdOutImpl开启
-    logImpl: org.apache.ibatis.logging.nologging.NoLoggingImpl
+    logImpl: org.apache.ibatis.logging.stdout.StdOutImpl
   globalConfig:
     banner: false
     metaObjectHandler: "org.hewo.core.support.dso.MetaObjectHandlerImpl"
