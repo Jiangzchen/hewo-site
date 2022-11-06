@@ -1,1 +1,1 @@
-rbp-managerextends.exe uninstall
+hewo-site.exe uninstall 

@@ -7,7 +7,7 @@ rem 传入参数
 set /p s=请输入服务的名称:
 
 %~d0
-cd %~dp0\_win11
+cd %~dp0\_win
 
 rem 创建文件 安装 启动 停止 卸载服务
 
@@ -29,18 +29,21 @@ rem 处理服务exe和xml服务文件 在处理xml的内容
 ren *.exe %s%.exe
 ren *.xml %s%.xml
 
-set ctr=0 
-
+set index=0
 for /f "eol=* tokens=*" %%i in (%s%.xml) do (
-
-rem 设置变量a为每行内容
-
-echo ctr
-   
-rem 把修改后的全部行存入$
-echo !a!>>$)
-rem move $ %s%.xml
-
+	
+	set /a index+=1
+	set "var=%%i"
+	
+	if !index!==3 set "var=<id>%s%</id>"
+	if !index!==4 set "var=<name>%s%</name>"
+	if !index!==5 set "var=<description>%s%</description>"
+	if !index!==7 set "var=<arguments> -jar -server -Xms512m -Xmx1024m -Dfile.encoding=UTF-8 %s%.jar</arguments>"
+	echo !var!>>"%s%.xml._"  
+	rem echo %%i
+)
+move "%s%.xml._" "%s%.xml"
+ 
 echo 服务文件已生成...
 echo.
 

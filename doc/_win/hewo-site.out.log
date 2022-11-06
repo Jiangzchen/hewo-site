@@ -1,0 +1,166 @@
+[Solon] App: Start loading
+[Solon] jar:file:/C:/Users/Administrator/Desktop/_work/hewo-site/doc/_win/hewo-site.jar!/app.yml
+[Solon] jar:file:/C:/Users/Administrator/Desktop/_work/hewo-site/doc/_win/hewo-site.jar!/META-INF/solon/solon.data.properties
+[Solon] jar:file:/C:/Users/Administrator/Desktop/_work/hewo-site/doc/_win/hewo-site.jar!/META-INF/solon/solon.validation.properties
+[Solon] jar:file:/C:/Users/Administrator/Desktop/_work/hewo-site/doc/_win/hewo-site.jar!/META-INF/solon/solon.serialization.snack3.properties
+[Solon] jar:file:/C:/Users/Administrator/Desktop/_work/hewo-site/doc/_win/hewo-site.jar!/META-INF/solon/solon.boot.jlhttp.properties
+[Solon] jar:file:/C:/Users/Administrator/Desktop/_work/hewo-site/doc/_win/hewo-site.jar!/META-INF/solon/solon.web.staticfiles.properties
+[Solon] jar:file:/C:/Users/Administrator/Desktop/_work/hewo-site/doc/_win/hewo-site.jar!/META-INF/solon/solon.sessionstate.local.properties
+[Solon] jar:file:/C:/Users/Administrator/Desktop/_work/hewo-site/doc/_win/hewo-site.jar!/META-INF/solon/solon.view.freemarker.properties
+[Solon] jar:file:/C:/Users/Administrator/Desktop/_work/hewo-site/doc/_win/hewo-site.jar!/META-INF/solon/solon.extend.mybatisplus.properties
+[Solon] jar:file:/C:/Users/Administrator/Desktop/_work/hewo-site/doc/_win/hewo-site.jar!/META-INF/solon/solon.extend.mybatis.properties
+[Solon] jar:file:/C:/Users/Administrator/Desktop/_work/hewo-site/doc/_win/hewo-site.jar!/META-INF/solon/solon.aspect.properties
+[Solon] View: mapping: @json=StringSerializerRender#SnackSerializer
+[Solon] View: mapping: @type_json=StringSerializerRender#SnackSerializer
+[Solon] Session: solon: Local session state plugin is loaded
+[Solon] View: load: FreemarkerRender
+[Solon] View: load: org.noear.solon.view.freemarker.FreemarkerRender
+[Solon] View: mapping: .ftl=FreemarkerRender
+Logging initialized using 'class org.apache.ibatis.logging.stdout.StdOutImpl' adapter.
+....MetaObjectHandlerImpl
+Class not found: org.jboss.vfs.VFS
+JBoss 6 VFS API is not available in this environment.
+Class not found: org.jboss.vfs.VirtualFile
+VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+Using VFS adapter org.apache.ibatis.io.DefaultVFS
+Find JAR URL: jar:file:/C:/Users/Administrator/Desktop/_work/hewo-site/doc/_win/hewo-site.jar!/org/hewo
+Inner URL: file:/C:/Users/Administrator/Desktop/_work/hewo-site/doc/_win/hewo-site.jar!/org/hewo
+Extracted JAR URL: file:/C:/Users/Administrator/Desktop/_work/hewo-site/doc/_win/hewo-site.jar
+Found JAR: file:/C:/Users/Administrator/Desktop/_work/hewo-site/doc/_win/hewo-site.jar
+Listing jar:file:/C:/Users/Administrator/Desktop/_work/hewo-site/doc/_win/hewo-site.jar!/org/hewo
+Found resource: /org/hewo/App.class
+Found resource: /org/hewo/core/constant/SystemConstant$MacroType.class
+Found resource: /org/hewo/core/constant/SystemConstant$StatusType.class
+Found resource: /org/hewo/core/constant/SystemConstant.class
+Found resource: /org/hewo/core/controller/AbstractController.class
+Found resource: /org/hewo/core/exception/BusinessException.class
+Found resource: /org/hewo/core/model/entity/R.class
+Found resource: /org/hewo/core/model/entity/Test.class
+Found resource: /org/hewo/core/model/request/BaseRequest.class
+Found resource: /org/hewo/core/model/request/ListRequest.class
+Found resource: /org/hewo/core/model/request/ModelRequest.class
+Found resource: /org/hewo/core/model/request/PageRequest.class
+Found resource: /org/hewo/core/support/conf/DataSourceConfigur.class
+Found resource: /org/hewo/core/support/dso/MetaObjectHandlerImpl.class
+Found resource: /org/hewo/core/support/dso/MybatisSqlSessionFactoryBuilderImpl.class
+Found resource: /org/hewo/core/support/filter/JwtAuthFilter.class
+Found resource: /org/hewo/core/utils/JwtUtil.class
+Found resource: /org/hewo/core/utils/SnowFlakeUtil.class
+Found resource: /org/hewo/core/utils/ThreadLocalGroup.class
+Found resource: /org/hewo/core/utils/ThreadLocalGroupUtil$1.class
+Found resource: /org/hewo/core/utils/ThreadLocalGroupUtil$InheritableThreadLocalMap.class
+Found resource: /org/hewo/core/utils/ThreadLocalGroupUtil.class
+Found resource: /org/hewo/modules/article/controller/ArticleController.class
+Found resource: /org/hewo/modules/article/mapper/ArticleMapper.class
+Found resource: /org/hewo/modules/article/model/dto/ArticleSaveDto.class
+Found resource: /org/hewo/modules/article/model/entity/Article.class
+Found resource: /org/hewo/modules/article/service/ArticleService.class
+Found resource: /org/hewo/modules/article/service/impl/ArticleServiceImpl.class
+Found resource: /org/hewo/modules/system/controller/AuthController.class
+Found resource: /org/hewo/modules/system/controller/SysLogController.class
+Found resource: /org/hewo/modules/system/controller/SysMacroController.class
+Found resource: /org/hewo/modules/system/controller/SysMenuController.class
+Found resource: /org/hewo/modules/system/controller/SysPageController.class
+Found resource: /org/hewo/modules/system/controller/SysRoleController.class
+Found resource: /org/hewo/modules/system/controller/SysUserController.class
+Found resource: /org/hewo/modules/system/mapper/SysLogMapper.class
+Found resource: /org/hewo/modules/system/mapper/SysMacroMapper.class
+Found resource: /org/hewo/modules/system/mapper/SysMenuMapper.class
+Found resource: /org/hewo/modules/system/mapper/SysRoleMapper.class
+Found resource: /org/hewo/modules/system/mapper/SysUserMapper.class
+Found resource: /org/hewo/modules/system/model/dto/AuthDto.class
+Found resource: /org/hewo/modules/system/model/dto/SysMacroSaveDto.class
+Found resource: /org/hewo/modules/system/model/dto/SysMenuSaveDto.class
+Found resource: /org/hewo/modules/system/model/dto/SysRoleSaveDto.class
+Found resource: /org/hewo/modules/system/model/dto/SysUserSaveDto.class
+Found resource: /org/hewo/modules/system/model/dto/UpdatePswdDto.class
+Found resource: /org/hewo/modules/system/model/entity/SysLog.class
+Found resource: /org/hewo/modules/system/model/entity/SysMacro.class
+Found resource: /org/hewo/modules/system/model/entity/SysMenu.class
+Found resource: /org/hewo/modules/system/model/entity/SysRole.class
+Found resource: /org/hewo/modules/system/model/entity/SysUser.class
+Found resource: /org/hewo/modules/system/model/vo/AuthVo.class
+Found resource: /org/hewo/modules/system/model/vo/SysLogVo.class
+Found resource: /org/hewo/modules/system/model/vo/SysUserVo.class
+Found resource: /org/hewo/modules/system/service/AuthService.class
+Found resource: /org/hewo/modules/system/service/impl/AuthServiceImpl.class
+Found resource: /org/hewo/modules/system/service/impl/SysLogServiceImpl.class
+Found resource: /org/hewo/modules/system/service/impl/SysMacroServiceImpl.class
+Found resource: /org/hewo/modules/system/service/impl/SysMenuServiceImpl.class
+Found resource: /org/hewo/modules/system/service/impl/SysRoleServiceImpl.class
+Found resource: /org/hewo/modules/system/service/impl/SysUserServiceImpl.class
+Found resource: /org/hewo/modules/system/service/SysLogService.class
+Found resource: /org/hewo/modules/system/service/SysMacroService.class
+Found resource: /org/hewo/modules/system/service/SysMenuService.class
+Found resource: /org/hewo/modules/system/service/SysRoleService.class
+Found resource: /org/hewo/modules/system/service/SysUserService.class
+Checking to see if class org.hewo.App matches criteria [is assignable to Object]
+Checking to see if class org.hewo.core.constant.SystemConstant$MacroType matches criteria [is assignable to Object]
+Checking to see if class org.hewo.core.constant.SystemConstant$StatusType matches criteria [is assignable to Object]
+Checking to see if class org.hewo.core.constant.SystemConstant matches criteria [is assignable to Object]
+Checking to see if class org.hewo.core.controller.AbstractController matches criteria [is assignable to Object]
+Checking to see if class org.hewo.core.exception.BusinessException matches criteria [is assignable to Object]
+Checking to see if class org.hewo.core.model.entity.R matches criteria [is assignable to Object]
+Checking to see if class org.hewo.core.model.entity.Test matches criteria [is assignable to Object]
+Checking to see if class org.hewo.core.model.request.BaseRequest matches criteria [is assignable to Object]
+Checking to see if class org.hewo.core.model.request.ListRequest matches criteria [is assignable to Object]
+Checking to see if class org.hewo.core.model.request.ModelRequest matches criteria [is assignable to Object]
+Checking to see if class org.hewo.core.model.request.PageRequest matches criteria [is assignable to Object]
+Checking to see if class org.hewo.core.support.conf.DataSourceConfigur matches criteria [is assignable to Object]
+Checking to see if class org.hewo.core.support.dso.MetaObjectHandlerImpl matches criteria [is assignable to Object]
+Checking to see if class org.hewo.core.support.dso.MybatisSqlSessionFactoryBuilderImpl matches criteria [is assignable to Object]
+Checking to see if class org.hewo.core.support.filter.JwtAuthFilter matches criteria [is assignable to Object]
+Checking to see if class org.hewo.core.utils.JwtUtil matches criteria [is assignable to Object]
+Checking to see if class org.hewo.core.utils.SnowFlakeUtil matches criteria [is assignable to Object]
+Checking to see if class org.hewo.core.utils.ThreadLocalGroup matches criteria [is assignable to Object]
+Checking to see if class org.hewo.core.utils.ThreadLocalGroupUtil$1 matches criteria [is assignable to Object]
+Checking to see if class org.hewo.core.utils.ThreadLocalGroupUtil$InheritableThreadLocalMap matches criteria [is assignable to Object]
+Checking to see if class org.hewo.core.utils.ThreadLocalGroupUtil matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.article.controller.ArticleController matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.article.mapper.ArticleMapper matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.article.model.dto.ArticleSaveDto matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.article.model.entity.Article matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.article.service.ArticleService matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.article.service.impl.ArticleServiceImpl matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.controller.AuthController matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.controller.SysLogController matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.controller.SysMacroController matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.controller.SysMenuController matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.controller.SysPageController matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.controller.SysRoleController matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.controller.SysUserController matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.mapper.SysLogMapper matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.mapper.SysMacroMapper matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.mapper.SysMenuMapper matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.mapper.SysRoleMapper matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.mapper.SysUserMapper matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.model.dto.AuthDto matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.model.dto.SysMacroSaveDto matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.model.dto.SysMenuSaveDto matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.model.dto.SysRoleSaveDto matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.model.dto.SysUserSaveDto matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.model.dto.UpdatePswdDto matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.model.entity.SysLog matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.model.entity.SysMacro matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.model.entity.SysMenu matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.model.entity.SysRole matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.model.entity.SysUser matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.model.vo.AuthVo matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.model.vo.SysLogVo matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.model.vo.SysUserVo matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.service.AuthService matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.service.impl.AuthServiceImpl matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.service.impl.SysLogServiceImpl matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.service.impl.SysMacroServiceImpl matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.service.impl.SysMenuServiceImpl matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.service.impl.SysRoleServiceImpl matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.service.impl.SysUserServiceImpl matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.service.SysLogService matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.service.SysMacroService matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.service.SysMenuService matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.service.SysRoleService matches criteria [is assignable to Object]
+Checking to see if class org.hewo.modules.system.service.SysUserService matches criteria [is assignable to Object]
+[Solon] Server:main: JlHttpServer 2.6(jlhttp)
+[Solon] Connector:main: jlhttp: Started ServerConnector@{HTTP/1.1,[http/1.1]}{http://localhost:8909}
+[Solon] Server:main: jlhttp: Started @4ms
+[Solon] App: End loading elapsed=1376ms pid=4876

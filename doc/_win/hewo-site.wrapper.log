@@ -1,0 +1,35 @@
+2022-11-06 16:36:25,362 INFO  - Starting ServiceWrapper in the CLI mode
+2022-11-06 16:36:25,680 INFO  - Uninstalling the service with id 'hewo-site'
+2022-11-06 16:36:25,681 WARN  - The service with id 'hewo-site' does not exist. Nothing to uninstall
+2022-11-06 16:36:25,681 INFO  - Completed. Exit code is 0
+2022-11-06 16:36:26,810 INFO  - Starting ServiceWrapper in the CLI mode
+2022-11-06 16:36:27,106 FATAL - WMI Operation failure: NoSuchService
+WMI.WmiException: NoSuchService
+   дк winsw.WrapperService.ThrowNoSuchService()
+   дк winsw.WrapperService.Run(String[] _args, ServiceDescriptor descriptor)
+   дк winsw.WrapperService.Main(String[] args)
+2022-11-06 16:36:28,476 INFO  - Starting ServiceWrapper in the CLI mode
+2022-11-06 16:36:28,785 INFO  - Completed. Exit code is 0
+2022-11-06 16:36:29,940 INFO  - Starting ServiceWrapper in the CLI mode
+2022-11-06 16:36:30,339 INFO  - Starting ServiceWrapper in the service mode
+2022-11-06 16:36:30,348 INFO  - Completed. Exit code is 0
+2022-11-06 16:36:30,353 INFO  - Starting C:\Program Files\Java\jdk1.8.0_181\bin\java.exe  -jar -server -Xms512m -Xmx1024m -Dfile.encoding=UTF-8 hewo-site.jar
+2022-11-06 16:36:30,355 INFO  - Starting C:\Program Files\Java\jdk1.8.0_181\bin\java.exe  -jar -server -Xms512m -Xmx1024m -Dfile.encoding=UTF-8 hewo-site.jar
+2022-11-06 16:36:30,365 INFO  - Started 4876
+2022-11-06 16:37:42,270 INFO  - Starting ServiceWrapper in the CLI mode
+2022-11-06 16:37:42,578 INFO  - Uninstalling the service with id 'hewo-site'
+2022-11-06 16:37:42,579 WARN  - The service with id 'hewo-site' is running. It may be impossible to uninstall it
+2022-11-06 16:37:42,586 INFO  - Completed. Exit code is 0
+2022-11-06 16:37:43,820 INFO  - Starting ServiceWrapper in the CLI mode
+2022-11-06 16:37:44,126 INFO  - Completed. Exit code is 0
+2022-11-06 16:37:44,127 INFO  - Stopping hewo-site
+2022-11-06 16:37:44,127 DEBUG - ProcessKill 4876
+2022-11-06 16:37:44,220 INFO  - Found child process: 15760 Name: conhost.exe
+2022-11-06 16:37:44,274 INFO  - Stopping process 15760
+2022-11-06 16:37:44,277 INFO  - Send SIGINT 15760
+2022-11-06 16:37:44,277 WARN  - SIGINT to 15760 failed - Killing as fallback
+2022-11-06 16:37:44,279 INFO  - Stopping process 4876
+2022-11-06 16:37:44,282 INFO  - Send SIGINT 4876
+2022-11-06 16:37:44,282 WARN  - SIGINT to 4876 failed - Killing as fallback
+2022-11-06 16:37:44,283 INFO  - Finished hewo-site
+2022-11-06 16:37:44,284 INFO  - Completed. Exit code is 0
