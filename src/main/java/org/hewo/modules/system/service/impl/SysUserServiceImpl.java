@@ -2,15 +2,12 @@ package org.hewo.modules.system.service.impl;
 
 import cn.hutool.core.util.IdUtil;
 import cn.hutool.crypto.digest.DigestUtil;
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.solon.plugins.pagination.Page;
 import org.apache.ibatis.solon.annotation.Db;
-import org.h2.engine.User;
 import org.hewo.core.constant.SystemConstant;
 import org.hewo.core.exception.BusinessException;
 import org.hewo.core.model.entity.R;
-import org.hewo.core.utils.SnowFlakeUtil;
 import org.hewo.core.utils.ThreadLocalGroup;
 import org.hewo.modules.system.mapper.SysUserMapper;
 import org.hewo.modules.system.model.dto.SysUserSaveDto;
@@ -18,6 +15,7 @@ import org.hewo.modules.system.model.dto.UpdatePswdDto;
 import org.hewo.modules.system.model.entity.SysUser;
 import org.hewo.modules.system.model.vo.SysUserVo;
 import org.hewo.modules.system.service.SysUserService;
+import org.noear.snack.core.utils.StringUtil;
 import org.noear.solon.aspect.annotation.Service;
 
 import java.util.Date;
@@ -103,5 +101,16 @@ public class SysUserServiceImpl implements SysUserService {
     @Override
     public Set<String> listUserRoles(String userId) {
         return null;
+    }
+
+    @Override
+    public R infoMe() {
+        String userId = ThreadLocalGroup.getUserId();
+        if (StringUtil.isEmpty(userId)) {
+            throw new BusinessException(-1,"请先授权，没有token");
+        }
+        SysUser sysUser = sysUserMapper.selectById(userId);
+        sysUser.setPassword(null);
+        return R.ok().data(sysUser);
     }
 }

@@ -29,6 +29,11 @@ public class SysUserController extends AbstractController {
         return sysUserService.info(req.getData());
     }
 
+    @Mapping("infoMe")
+    public R infoMe(){
+        return sysUserService.infoMe();
+    }
+
     @Mapping("list")
     public R page(PageRequest<String> req){
         return sysUserService.list(req.getPage(),req.getPageSize(),req.getData());
@@ -58,5 +63,4 @@ public class SysUserController extends AbstractController {
     public R reset(ModelRequest<SysUserSaveDto> req) {
         return sysUserService.reset(req.getData());
     }
-
 }

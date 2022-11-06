@@ -6,7 +6,9 @@ import org.hewo.core.model.request.ListRequest;
 import org.hewo.core.model.request.ModelRequest;
 import org.hewo.core.model.request.PageRequest;
 import org.hewo.modules.system.model.dto.SysMacroSaveDto;
+import org.hewo.modules.system.model.dto.SysRoleSaveDto;
 import org.hewo.modules.system.service.SysMacroService;
+import org.hewo.modules.system.service.SysRoleService;
 import org.noear.solon.annotation.Controller;
 import org.noear.solon.annotation.Inject;
 import org.noear.solon.annotation.Mapping;
@@ -16,31 +18,31 @@ import org.noear.solon.annotation.Mapping;
 public class SysRoleController extends AbstractController {
 
     @Inject
-    private SysMacroService sysMacroService;
+    private SysRoleService sysRoleService;
 
     @Mapping("list")
     public R list(PageRequest<String> req){
-        return sysMacroService.list(req.getPage(),req.getPageSize(),req.getData());
+        return sysRoleService.list(req.getPage(),req.getPageSize(),req.getData());
     }
 
     @Mapping("save")
-    public R save(ModelRequest<SysMacroSaveDto> req){
-        return sysMacroService.save(req.getData());
+    public R save(ModelRequest<SysRoleSaveDto> req){
+        return sysRoleService.save(req.getData());
     }
 
     @Mapping("update")
-    public R update(ModelRequest<SysMacroSaveDto> req){
-        return sysMacroService.update(req.getData());
+    public R update(ModelRequest<SysRoleSaveDto> req){
+        return sysRoleService.update(req.getData());
     }
 
     @Mapping("info")
     public R info(ModelRequest<String> req){
-        return sysMacroService.info(req.getData());
+        return sysRoleService.info(req.getData());
     }
 
     @Mapping("remove")
     public R remove(ListRequest<String> req){
-        return sysMacroService.batchRemove(req.getData());
+        return sysRoleService.batchRemove(req.getData());
     }
 
 }

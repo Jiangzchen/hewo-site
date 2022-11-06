@@ -5,8 +5,12 @@ import org.hewo.core.model.entity.R;
 import org.noear.solon.core.handle.Context;
 import org.noear.solon.core.handle.ModelAndView;
 import org.noear.solon.core.handle.Render;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class AbstractController implements Render {
+
+    protected Logger LOGGER = LoggerFactory.getLogger(getClass());
 
     @Override
     public void render(Object obj, Context ctx) throws Throwable {
@@ -28,4 +32,16 @@ public class AbstractController implements Render {
             ctx.render(obj);
         }
     }
+
+    /**
+     * ftl视图
+     * @param page
+     * @return ftl全路径
+     */
+    protected ModelAndView mav(String page) {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.view(String.format("%s.ftl",page));
+        return modelAndView;
+    }
+
 }

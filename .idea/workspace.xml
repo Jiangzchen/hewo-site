@@ -2,14 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba7c1f34-d6ae-4e40-9d1d-6918090d3ac9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/hewo/core/service/impl/AbstractServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/_win11/hfewfods.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/_win11/hfewfods.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/_win11/停止服务.bat" beforeDir="false" afterPath="$PROJECT_DIR$/doc/_win11/停止服务.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/_win11/卸载服务.bat" beforeDir="false" afterPath="$PROJECT_DIR$/doc/_win11/卸载服务.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/_win11/启动服务.bat" beforeDir="false" afterPath="$PROJECT_DIR$/doc/_win11/启动服务.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/_win11/安装服务.bat" beforeDir="false" afterPath="$PROJECT_DIR$/doc/_win11/安装服务.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/win_package.bat" beforeDir="false" afterPath="$PROJECT_DIR$/doc/win_package.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hewo/core/controller/AbstractController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hewo/core/controller/AbstractController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hewo/modules/system/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hewo/modules/system/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hewo/modules/system/controller/SysRoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hewo/modules/system/controller/SysRoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hewo/modules/system/controller/SysUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hewo/modules/system/controller/SysUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hewo/modules/system/model/entity/SysRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hewo/modules/system/model/entity/SysRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hewo/modules/system/service/SysMacroService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hewo/modules/system/service/SysMacroService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hewo/modules/system/service/SysRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hewo/modules/system/service/SysRoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hewo/modules/system/service/SysUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hewo/modules/system/service/SysUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hewo/modules/system/service/impl/SysLogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hewo/modules/system/service/impl/SysLogServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hewo/modules/system/service/impl/SysMacroServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hewo/modules/system/service/impl/SysMacroServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hewo/modules/system/service/impl/SysRoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hewo/modules/system/service/impl/SysRoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hewo/modules/system/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hewo/modules/system/service/impl/SysUserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,7 +242,7 @@
       <workItem from="1667615624742" duration="47000" />
       <workItem from="1667625685085" duration="6695000" />
       <workItem from="1667639438064" duration="14000" />
-      <workItem from="1667710932264" duration="602000" />
+      <workItem from="1667710932264" duration="6445000" />
     </task>
     <task id="LOCAL-00001" summary="README.md更新下">
       <created>1667630644461</created>
@@ -284,15 +290,19 @@
     </state>
     <state x="445" y="198" width="1109" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1667631173093" />
     <state x="105" y="143" width="1208" height="705" key="#com.intellij.execution.impl.EditConfigurationsDialog/63.0.1473.864@63.0.1473.864" timestamp="1667572123560" />
-    <state x="645" y="198" key="#com.intellij.ide.util.MemberChooser" timestamp="1667571992537">
+    <state x="645" y="198" key="#com.intellij.ide.util.MemberChooser" timestamp="1667740747413">
       <screen x="63" y="0" width="1473" height="864" />
     </state>
     <state x="796" y="248" key="#com.intellij.ide.util.MemberChooser/62.0.1858.1080@62.0.1858.1080" timestamp="1666867972410" />
-    <state x="645" y="198" key="#com.intellij.ide.util.MemberChooser/63.0.1473.864@63.0.1473.864" timestamp="1667571992537" />
+    <state x="645" y="198" key="#com.intellij.ide.util.MemberChooser/63.0.1473.864@63.0.1473.864" timestamp="1667740747413" />
     <state x="466" y="468" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1666846099476">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="466" y="468" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1666846099476" />
+    <state x="528" y="328" width="548" height="214" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1667740799541">
+      <screen x="63" y="0" width="1473" height="864" />
+    </state>
+    <state x="528" y="328" width="548" height="214" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/63.0.1473.864@63.0.1473.864" timestamp="1667740799541" />
     <state x="458" y="137" key="CommitChangelistDialog2" timestamp="1667630787227">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
@@ -306,26 +316,26 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="770" y="298" key="FileChooserDialogImpl/62.0.1858.1080@62.0.1858.1080" timestamp="1666791919314" />
-    <state width="1817" height="347" key="GridCell.Tab.0.bottom" timestamp="1667633066005">
-      <screen x="62" y="0" width="1858" height="1080" />
+    <state width="1432" height="72" key="GridCell.Tab.0.bottom" timestamp="1667725630131">
+      <screen x="63" y="0" width="1473" height="864" />
     </state>
     <state width="1817" height="347" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1667633066005" />
-    <state width="1432" height="254" key="GridCell.Tab.0.bottom/63.0.1473.864@63.0.1473.864" timestamp="1667576660620" />
-    <state width="1817" height="347" key="GridCell.Tab.0.center" timestamp="1667633066004">
-      <screen x="62" y="0" width="1858" height="1080" />
+    <state width="1432" height="72" key="GridCell.Tab.0.bottom/63.0.1473.864@63.0.1473.864" timestamp="1667725630131" />
+    <state width="1432" height="72" key="GridCell.Tab.0.center" timestamp="1667725630131">
+      <screen x="63" y="0" width="1473" height="864" />
     </state>
     <state width="1817" height="347" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1667633066004" />
-    <state width="1432" height="254" key="GridCell.Tab.0.center/63.0.1473.864@63.0.1473.864" timestamp="1667576660620" />
-    <state width="1817" height="347" key="GridCell.Tab.0.left" timestamp="1667633066004">
-      <screen x="62" y="0" width="1858" height="1080" />
+    <state width="1432" height="72" key="GridCell.Tab.0.center/63.0.1473.864@63.0.1473.864" timestamp="1667725630131" />
+    <state width="1432" height="72" key="GridCell.Tab.0.left" timestamp="1667725630130">
+      <screen x="63" y="0" width="1473" height="864" />
     </state>
     <state width="1817" height="347" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1667633066004" />
-    <state width="1432" height="254" key="GridCell.Tab.0.left/63.0.1473.864@63.0.1473.864" timestamp="1667576660619" />
-    <state width="1817" height="347" key="GridCell.Tab.0.right" timestamp="1667633066004">
-      <screen x="62" y="0" width="1858" height="1080" />
+    <state width="1432" height="72" key="GridCell.Tab.0.left/63.0.1473.864@63.0.1473.864" timestamp="1667725630130" />
+    <state width="1432" height="72" key="GridCell.Tab.0.right" timestamp="1667725630131">
+      <screen x="63" y="0" width="1473" height="864" />
     </state>
     <state width="1817" height="347" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1667633066004" />
-    <state width="1432" height="254" key="GridCell.Tab.0.right/63.0.1473.864@63.0.1473.864" timestamp="1667576660620" />
+    <state width="1432" height="72" key="GridCell.Tab.0.right/63.0.1473.864@63.0.1473.864" timestamp="1667725630131" />
     <state width="1432" height="203" key="GridCell.Tab.1.bottom" timestamp="1667576507928">
       <screen x="63" y="0" width="1473" height="864" />
     </state>
@@ -351,6 +361,10 @@
     </state>
     <state x="516" y="185" key="SettingsEditor/62.0.1858.1080@62.0.1858.1080" timestamp="1667627315967" />
     <state x="366" y="0" key="SettingsEditor/63.0.1473.864@63.0.1473.864" timestamp="1667575335884" />
+    <state width="498" height="445" key="SwitcherDM" timestamp="1667740981819">
+      <screen x="63" y="0" width="1473" height="864" />
+    </state>
+    <state width="498" height="445" key="SwitcherDM/63.0.1473.864@63.0.1473.864" timestamp="1667740981819" />
     <state x="583" y="276" key="Vcs.Push.Dialog.v2" timestamp="1667630693327">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>

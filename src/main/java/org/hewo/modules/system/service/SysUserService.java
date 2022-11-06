@@ -29,4 +29,6 @@ public interface SysUserService {
 
     // 查询用户角色集合
     Set<String> listUserRoles(String userId);
+
+    R infoMe();
 }

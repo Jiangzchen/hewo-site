@@ -26,11 +26,11 @@ public class AuthController extends AbstractController {
 
     @Mapping("toLogin")
     private ModelAndView toLogin(){
-        return new ModelAndView("system/login.ftl");
+        return mav("system/login");
     }
 
     @Mapping("index")
     private ModelAndView index(){
-        return new ModelAndView("system/index.ftl");
+        return mav("system/index");
     }
 }
