@@ -10,6 +10,6 @@ var auth = {
 
 // 用户模块api
 var user = {
-
+    list: "/system/user/list",
 };
 

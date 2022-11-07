@@ -7,4 +7,6 @@ public interface PmArticleService {
     R save(PmArticleSaveDto req);
 
     R info(String req);
+
+    R list(int page, int pageSize, String req);
 }

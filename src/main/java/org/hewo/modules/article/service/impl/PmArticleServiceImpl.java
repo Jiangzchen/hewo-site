@@ -51,4 +51,10 @@ public class PmArticleServiceImpl extends AbstractServiceImpl implements PmArtic
         }
         return R.ok().data(pmArticleVo);
     }
+
+    @Override
+    public R list(int page, int pageSize, String req) {
+
+        return null;
+    }
 }
