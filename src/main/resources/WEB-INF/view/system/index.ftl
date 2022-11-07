@@ -1,76 +1,119 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Main CSS-->
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <!-- Font-icon css-->
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Login - Vali Admin</title>
-</head>
-<body>
-<section class="material-half-bg">
-    <div class="cover"></div>
-</section>
-<section class="login-content">
-    <div class="logo">
-        <h1>Vali</h1>
+<#include "../layouts/_layout.ftl">
+
+<@layout>
+<main class="app-content">
+    <div class="app-title">
+        <div>
+            <h1><i class="fa fa-dashboard"></i> Dashboard</h1>
+            <p>A free and open source Bootstrap 4 admin template</p>
+        </div>
+        <ul class="app-breadcrumb breadcrumb">
+            <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
+            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+        </ul>
     </div>
-    <div class="login-box">
-        <form class="login-form" action="index.html">
-            <h3 class="login-head"><i class="fa fa-lg fa-fw fa-user"></i>SIGN IN</h3>
-            <div class="form-group">
-                <label class="control-label">USERNAME</label>
-                <input class="form-control" type="text" placeholder="Email" autofocus>
-            </div>
-            <div class="form-group">
-                <label class="control-label">PASSWORD</label>
-                <input class="form-control" type="password" placeholder="Password">
-            </div>
-            <div class="form-group">
-                <div class="utility">
-                    <div class="animated-checkbox">
-                        <label>
-                            <input type="checkbox"><span class="label-text">Stay Signed in</span>
-                        </label>
-                    </div>
-                    <p class="semibold-text mb-2"><a href="#" data-toggle="flip">Forgot Password ?</a></p>
+    <div class="row">
+        <div class="col-md-6 col-lg-3">
+            <div class="widget-small primary coloured-icon"><i class="icon fa fa-users fa-3x"></i>
+                <div class="info">
+                    <h4>Users</h4>
+                    <p><b>5</b></p>
                 </div>
             </div>
-            <div class="form-group btn-container">
-                <button class="btn btn-primary btn-block"><i class="fa fa-sign-in fa-lg fa-fw"></i>SIGN IN</button>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <div class="widget-small info coloured-icon"><i class="icon fa fa-thumbs-o-up fa-3x"></i>
+                <div class="info">
+                    <h4>Likes</h4>
+                    <p><b>25</b></p>
+                </div>
             </div>
-        </form>
-        <form class="forget-form" action="index.html">
-            <h3 class="login-head"><i class="fa fa-lg fa-fw fa-lock"></i>Forgot Password ?</h3>
-            <div class="form-group">
-                <label class="control-label">EMAIL</label>
-                <input class="form-control" type="text" placeholder="Email">
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <div class="widget-small warning coloured-icon"><i class="icon fa fa-files-o fa-3x"></i>
+                <div class="info">
+                    <h4>Uploades</h4>
+                    <p><b>10</b></p>
+                </div>
             </div>
-            <div class="form-group btn-container">
-                <button class="btn btn-primary btn-block"><i class="fa fa-unlock fa-lg fa-fw"></i>RESET</button>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <div class="widget-small danger coloured-icon"><i class="icon fa fa-star fa-3x"></i>
+                <div class="info">
+                    <h4>Stars</h4>
+                    <p><b>500</b></p>
+                </div>
             </div>
-            <div class="form-group mt-3">
-                <p class="semibold-text mb-0"><a href="#" data-toggle="flip"><i class="fa fa-angle-left fa-fw"></i> Back to Login</a></p>
-            </div>
-        </form>
+        </div>
     </div>
-</section>
-<!-- Essential javascripts for application to work-->
-<script src="/js/jquery-3.3.1.min.js"></script>
-<script src="/js/popper.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
-<script src="/js/main.js"></script>
-<!-- The javascript plugin to display page loading on top-->
-<script src="/js/plugins/pace.min.js"></script>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="tile">
+                <h3 class="tile-title">Monthly Sales</h3>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <canvas class="embed-responsive-item" id="lineChartDemo"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="tile">
+                <h3 class="tile-title">Support Requests</h3>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <canvas class="embed-responsive-item" id="pieChartDemo"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</@layout>
+
+<script type="text/javascript" src="/js/plugins/chart.js"></script>
 <script type="text/javascript">
-    // Login Page Flipbox control
-    $('.login-content [data-toggle="flip"]').click(function() {
-        $('.login-box').toggleClass('flipped');
-        return false;
-    });
+    var data = {
+        labels: ["January", "February", "March", "April", "May"],
+        datasets: [
+            {
+                label: "My First dataset",
+                fillColor: "rgba(220,220,220,0.2)",
+                strokeColor: "rgba(220,220,220,1)",
+                pointColor: "rgba(220,220,220,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(220,220,220,1)",
+                data: [65, 59, 80, 81, 56]
+            },
+            {
+                label: "My Second dataset",
+                fillColor: "rgba(151,187,205,0.2)",
+                strokeColor: "rgba(151,187,205,1)",
+                pointColor: "rgba(151,187,205,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(151,187,205,1)",
+                data: [28, 48, 40, 19, 86]
+            }
+        ]
+    };
+    var pdata = [
+        {
+            value: 300,
+            color: "#46BFBD",
+            highlight: "#5AD3D1",
+            label: "Complete"
+        },
+        {
+            value: 50,
+            color:"#F7464A",
+            highlight: "#FF5A5E",
+            label: "In-Progress"
+        }
+    ]
+
+    var ctxl = $("#lineChartDemo").get(0).getContext("2d");
+    var lineChart = new Chart(ctxl).Line(data);
+
+    var ctxp = $("#pieChartDemo").get(0).getContext("2d");
+    var pieChart = new Chart(ctxp).Pie(pdata);
 </script>
 </body>
 </html>

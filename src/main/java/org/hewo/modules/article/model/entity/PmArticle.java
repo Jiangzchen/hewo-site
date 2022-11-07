@@ -7,7 +7,7 @@ import java.io.Serializable;
 
 @Data
 @TableName("pm_article")
-public class Article implements Serializable {
+public class PmArticle implements Serializable {
     private String id;
     private String content;
     private String title;

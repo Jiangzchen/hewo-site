@@ -1,11 +1,12 @@
 package org.hewo.modules.system.controller;
 
+import org.hewo.core.controller.AbstractController;
 import org.noear.solon.annotation.Controller;
 import org.noear.solon.annotation.Mapping;
 import org.noear.solon.core.handle.ModelAndView;
 
 @Controller
-public class SysPageController {
+public class SysPageController extends AbstractController {
 
     @Mapping("/{module}/{function}/{url}.ftl")
     public ModelAndView page(String module,String function,String url) {

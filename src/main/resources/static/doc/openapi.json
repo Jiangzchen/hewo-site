@@ -1,0 +1,1302 @@
+{
+  "components": {
+    "schemas": {
+      "_system_user_removeresponse": {},
+      "_system_macro_inforequest": {},
+      "_system_user_updatePswdresponse": {},
+      "_system_user_enablerequest": {},
+      "_system_role_removeresponse": {},
+      "_system_log_listrequest": {},
+      "_system_macro_inforesponse": {},
+      "__module___function___url_.ftlrequest": {},
+      "_system_macro_removerequest": {},
+      "_system_macro_removeresponse": {},
+      "_system_macro_listrequest": {},
+      "_system_menu_removerequest": {},
+      "_system_user_enableresponse": {},
+      "_system_user_permsresponse": {},
+      "_system_menu_listresponse": {},
+      "_article_saveresponse": {},
+      "_system_menu_removeresponse": {},
+      "_system_user_saveresponse": {},
+      "_system_log_clearrequest": {},
+      "_system_role_saveresponse": {},
+      "_system_log_removeresponse": {},
+      "_system_user_listrequest": {},
+      "_system_role_updateresponse": {},
+      "_system_user_listresponse": {},
+      "_system_log_listresponse": {},
+      "_system_user_permsrequest": {},
+      "_system_user_updatePswdrequest": {},
+      "_system_macro_saveresponse": {},
+      "_auth_logoutresponse": {},
+      "_system_role_inforesponse": {},
+      "_article_saverequest": {},
+      "_system_menu_inforequest": {},
+      "_system_user_infoMerequest": {},
+      "_system_user_disablerequest": {},
+      "_system_menu_saveresponse": {},
+      "__module___function___url_.ftlresponse": {},
+      "_system_user_disableresponse": {},
+      "_system_macro_listresponse": {},
+      "_system_role_listrequest": {},
+      "_system_role_updaterequest": {},
+      "_system_log_removerequest": {},
+      "_system_menu_listrequest": {},
+      "_system_role_listresponse": {},
+      "_system_user_inforesponse": {},
+      "_system_user_infoMeresponse": {},
+      "_system_role_removerequest": {},
+      "_system_user_resetrequest": {},
+      "_system_macro_saverequest": {},
+      "_system_macro_updateresponse": {},
+      "_system_menu_saverequest": {},
+      "_system_user_inforequest": {},
+      "_system_user_saverequest": {},
+      "_system_user_resetresponse": {},
+      "_system_log_clearresponse": {},
+      "_auth_logoutrequest": {},
+      "_system_menu_inforesponse": {},
+      "_system_role_saverequest": {},
+      "_system_user_removerequest": {},
+      "_system_role_inforequest": {},
+      "_system_macro_updaterequest": {}
+    }
+  },
+  "servers": [
+    {
+      "url": ""
+    }
+  ],
+  "openapi": "3.0.3",
+  "paths": {
+    "/system/macro/update": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/_system_macro_updateresponse"
+                },
+                "examples": {
+                  "json": {
+                    "summary": "test data",
+                    "value": "{}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "ff80fd49bac61c2fea2c6c792139fa2a",
+        "parameters": []
+      }
+    },
+    "/system/role/save": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/_system_role_saveresponse"
+                },
+                "examples": {
+                  "json": {
+                    "summary": "test data",
+                    "value": "{}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "fc8dadebb2ad594ceb12d3a4925d6a76",
+        "parameters": []
+      }
+    },
+    "/system/macro/save": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/_system_macro_saveresponse"
+                },
+                "examples": {
+                  "json": {
+                    "summary": "test data",
+                    "value": "{}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "40b8ad809033db711d87a3436c854ead",
+        "parameters": []
+      }
+    },
+    "/system/role/remove": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/_system_role_removeresponse"
+                },
+                "examples": {
+                  "json": {
+                    "summary": "test data",
+                    "value": "{}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "6220d5b81e798e11ec498e569d964b30",
+        "parameters": [
+          {
+            "schema": {
+              "type": "array",
+              "items": {}
+            },
+            "in": "query",
+            "description": "No comments found.",
+            "required": false,
+            "example": "",
+            "name": "data"
+          }
+        ]
+      }
+    },
+    "/system/log/clear": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/_system_log_clearresponse"
+                },
+                "examples": {
+                  "json": {
+                    "summary": "test data",
+                    "value": "{}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "0416ff22a19b48f6f515cc9900b25cf6",
+        "parameters": []
+      }
+    },
+    "/system/user/infoMe": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/_system_user_infoMeresponse"
+                },
+                "examples": {
+                  "json": {
+                    "summary": "test data",
+                    "value": "{}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "d4663552be26a483eaeab58f97c0ae40",
+        "parameters": []
+      }
+    },
+    "/system/user/save": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/_system_user_saveresponse"
+                },
+                "examples": {
+                  "json": {
+                    "summary": "test data",
+                    "value": "{}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "750dab24f38962fcfb6ec61a57ed0bb5",
+        "parameters": []
+      }
+    },
+    "/system/user/remove": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/_system_user_removeresponse"
+                },
+                "examples": {
+                  "json": {
+                    "summary": "test data",
+                    "value": "{}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "7f7094bd89b6b969c195011390e4a04d",
+        "parameters": [
+          {
+            "schema": {
+              "type": "array",
+              "items": {}
+            },
+            "in": "query",
+            "description": "No comments found.",
+            "required": false,
+            "example": "",
+            "name": "data"
+          }
+        ]
+      }
+    },
+    "/system/menu/save": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/_system_menu_saveresponse"
+                },
+                "examples": {
+                  "json": {
+                    "summary": "test data",
+                    "value": "{}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "b8f8770c1cbf23194e9a26c008be039b",
+        "parameters": []
+      }
+    },
+    "/system/user/disable": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/_system_user_disableresponse"
+                },
+                "examples": {
+                  "json": {
+                    "summary": "test data",
+                    "value": "{}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "dc2b756ddbcfc278192b74a24eae4032",
+        "parameters": [
+          {
+            "schema": {
+              "type": "array",
+              "items": {}
+            },
+            "in": "query",
+            "description": "No comments found.",
+            "required": false,
+            "example": "",
+            "name": "data"
+          }
+        ]
+      }
+    },
+    "/system/menu/info": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/_system_menu_inforesponse"
+                },
+                "examples": {
+                  "json": {
+                    "summary": "test data",
+                    "value": "{}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "946b474c724d959568edfb9094541f05",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "description": "No comments found.",
+            "required": false,
+            "example": "",
+            "name": "data"
+          }
+        ]
+      }
+    },
+    "/system/menu/list": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/_system_menu_listresponse"
+                },
+                "examples": {
+                  "json": {
+                    "summary": "test data",
+                    "value": "{}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "6d10bba67d047912dcff7b5435834e66",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "description": "No comments found.",
+            "required": false,
+            "example": "",
+            "name": "data"
+          },
+          {
+            "schema": {
+              "format": "int32",
+              "type": "integer"
+            },
+            "in": "query",
+            "description": "No comments found.",
+            "required": false,
+            "example": "1",
+            "name": "page"
+          },
+          {
+            "schema": {
+              "format": "int32",
+              "type": "integer"
+            },
+            "in": "query",
+            "description": "No comments found.",
+            "required": false,
+            "example": "10",
+            "name": "pageSize"
+          }
+        ]
+      }
+    },
+    "/system/user/info": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/_system_user_inforesponse"
+                },
+                "examples": {
+                  "json": {
+                    "summary": "test data",
+                    "value": "{}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "71d3e90d885566ae8ca4e320f080a735",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "description": "No comments found.",
+            "required": false,
+            "example": "",
+            "name": "data"
+          }
+        ]
+      }
+    },
+    "/system/user/list": {
+      "post": {
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded;charset\u003dutf-8": {
+              "schema": {
+                "$ref": "#/components/schemas/_system_user_listrequest"
+              },
+              "examples": {
+                "json": {
+                  "summary": "test data",
+                  "value": "curl -X POST -i /system/user/list --data \u0027pageSize\u003d10\u0026page\u003d1\u0027"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/_system_user_listresponse"
+                },
+                "examples": {
+                  "json": {
+                    "summary": "test data",
+                    "value": "{}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "aceb3073cb54fc77b8854a4a9cb4bcb0",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "description": "No comments found.",
+            "required": false,
+            "example": "",
+            "name": "data"
+          },
+          {
+            "schema": {
+              "format": "int32",
+              "type": "integer"
+            },
+            "in": "query",
+            "description": "No comments found.",
+            "required": false,
+            "example": "1",
+            "name": "page"
+          },
+          {
+            "schema": {
+              "format": "int32",
+              "type": "integer"
+            },
+            "in": "query",
+            "description": "No comments found.",
+            "required": false,
+            "example": "10",
+            "name": "pageSize"
+          }
+        ]
+      }
+    },
+    "/system/role/info": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/_system_role_inforesponse"
+                },
+                "examples": {
+                  "json": {
+                    "summary": "test data",
+                    "value": "{}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "13129a801566091cc854d2a625acac40",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "description": "No comments found.",
+            "required": false,
+            "example": "",
+            "name": "data"
+          }
+        ]
+      }
+    },
+    "/article/save": {
+      "post": {
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded;charset\u003dutf-8": {
+              "schema": {
+                "$ref": "#/components/schemas/_article_saverequest"
+              },
+              "examples": {
+                "json": {
+                  "summary": "test data",
+                  "value": "curl -X POST -i /article/save"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/_article_saveresponse"
+                },
+                "examples": {
+                  "json": {
+                    "summary": "test data",
+                    "value": "{}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "39a35920613f94f3c2f081bc4ff7c686",
+        "parameters": []
+      }
+    },
+    "/system/user/enable": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/_system_user_enableresponse"
+                },
+                "examples": {
+                  "json": {
+                    "summary": "test data",
+                    "value": "{}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "fe20cf67ee4526eb32a90890649e2d33",
+        "parameters": [
+          {
+            "schema": {
+              "type": "array",
+              "items": {}
+            },
+            "in": "query",
+            "description": "No comments found.",
+            "required": false,
+            "example": "",
+            "name": "data"
+          }
+        ]
+      }
+    },
+    "/system/user/updatePswd": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/_system_user_updatePswdresponse"
+                },
+                "examples": {
+                  "json": {
+                    "summary": "test data",
+                    "value": "{}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "d85f64a8f5f4e7cf9c664fbc6fb48805",
+        "parameters": []
+      }
+    },
+    "/system/role/list": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/_system_role_listresponse"
+                },
+                "examples": {
+                  "json": {
+                    "summary": "test data",
+                    "value": "{}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "923ccd53dd580773cf89107533c4d6cd",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "description": "No comments found.",
+            "required": false,
+            "example": "",
+            "name": "data"
+          },
+          {
+            "schema": {
+              "format": "int32",
+              "type": "integer"
+            },
+            "in": "query",
+            "description": "No comments found.",
+            "required": false,
+            "example": "1",
+            "name": "page"
+          },
+          {
+            "schema": {
+              "format": "int32",
+              "type": "integer"
+            },
+            "in": "query",
+            "description": "No comments found.",
+            "required": false,
+            "example": "10",
+            "name": "pageSize"
+          }
+        ]
+      }
+    },
+    "/system/user/reset": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/_system_user_resetresponse"
+                },
+                "examples": {
+                  "json": {
+                    "summary": "test data",
+                    "value": "{}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "8cea9a2ed4d84daf6e1c168485547260",
+        "parameters": []
+      }
+    },
+    "/auth/logout": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/_auth_logoutresponse"
+                },
+                "examples": {
+                  "json": {
+                    "summary": "test data",
+                    "value": "Error restful return."
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "d1aaeb663cb26f371ac82b2108b13a90",
+        "parameters": []
+      }
+    },
+    "/system/user/perms": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/_system_user_permsresponse"
+                },
+                "examples": {
+                  "json": {
+                    "summary": "test data",
+                    "value": "{}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "f041ee35f91437a9f16c3a76f1e7fcd0",
+        "parameters": []
+      }
+    },
+    "/system/log/remove": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/_system_log_removeresponse"
+                },
+                "examples": {
+                  "json": {
+                    "summary": "test data",
+                    "value": "{}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "2e39c4eb33284929287f4aa9e7aa47f0",
+        "parameters": [
+          {
+            "schema": {
+              "type": "array",
+              "items": {}
+            },
+            "in": "query",
+            "description": "No comments found.",
+            "required": false,
+            "example": "",
+            "name": "data"
+          }
+        ]
+      }
+    },
+    "/system/macro/remove": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/_system_macro_removeresponse"
+                },
+                "examples": {
+                  "json": {
+                    "summary": "test data",
+                    "value": "{}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "5acb0dcfaf59dc49f620500cc6a5b6b3",
+        "parameters": [
+          {
+            "schema": {
+              "type": "array",
+              "items": {}
+            },
+            "in": "query",
+            "description": "No comments found.",
+            "required": false,
+            "example": "",
+            "name": "data"
+          }
+        ]
+      }
+    },
+    "/system/role/update": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/_system_role_updateresponse"
+                },
+                "examples": {
+                  "json": {
+                    "summary": "test data",
+                    "value": "{}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "11f18829e3ab8d2ff7107f2c566a57dc",
+        "parameters": []
+      }
+    },
+    "/system/log/list": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/_system_log_listresponse"
+                },
+                "examples": {
+                  "json": {
+                    "summary": "test data",
+                    "value": "{}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "c848492aa3ee0173517a35a15ca4bfc7",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "description": "No comments found.",
+            "required": false,
+            "example": "",
+            "name": "data"
+          },
+          {
+            "schema": {
+              "format": "int32",
+              "type": "integer"
+            },
+            "in": "query",
+            "description": "No comments found.",
+            "required": false,
+            "example": "1",
+            "name": "page"
+          },
+          {
+            "schema": {
+              "format": "int32",
+              "type": "integer"
+            },
+            "in": "query",
+            "description": "No comments found.",
+            "required": false,
+            "example": "10",
+            "name": "pageSize"
+          }
+        ]
+      }
+    },
+    "/{module}/{function}/{url}.ftl": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/__module___function___url_.ftlresponse"
+                },
+                "examples": {
+                  "json": {
+                    "summary": "test data",
+                    "value": "Error restful return."
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "412d9c6840d4585b73b3ac3a19187ff3",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "description": "No comments found.",
+            "required": false,
+            "example": "k4r90c",
+            "name": "module"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "description": "No comments found.",
+            "required": false,
+            "example": "14e73m",
+            "name": "function"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "description": "No comments found.",
+            "required": false,
+            "example": "www.cari-hilpert.info",
+            "name": "url"
+          }
+        ]
+      }
+    },
+    "/system/macro/info": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/_system_macro_inforesponse"
+                },
+                "examples": {
+                  "json": {
+                    "summary": "test data",
+                    "value": "{}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "e83e7bf879ace355323e16036465773c",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "description": "No comments found.",
+            "required": false,
+            "example": "",
+            "name": "data"
+          }
+        ]
+      }
+    },
+    "/system/menu/remove": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/_system_menu_removeresponse"
+                },
+                "examples": {
+                  "json": {
+                    "summary": "test data",
+                    "value": "{}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "c808489987a7d7a5733e604f1ca0819f",
+        "parameters": [
+          {
+            "schema": {
+              "type": "array",
+              "items": {}
+            },
+            "in": "query",
+            "description": "No comments found.",
+            "required": false,
+            "example": "",
+            "name": "data"
+          }
+        ]
+      }
+    },
+    "/system/macro/list": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/_system_macro_listresponse"
+                },
+                "examples": {
+                  "json": {
+                    "summary": "test data",
+                    "value": "{}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "d6f899c323ca8e72fffd24b07c235092",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "description": "No comments found.",
+            "required": false,
+            "example": "",
+            "name": "data"
+          },
+          {
+            "schema": {
+              "format": "int32",
+              "type": "integer"
+            },
+            "in": "query",
+            "description": "No comments found.",
+            "required": false,
+            "example": "1",
+            "name": "page"
+          },
+          {
+            "schema": {
+              "format": "int32",
+              "type": "integer"
+            },
+            "in": "query",
+            "description": "No comments found.",
+            "required": false,
+            "example": "10",
+            "name": "pageSize"
+          }
+        ]
+      }
+    }
+  },
+  "info": {
+    "title": "测试",
+    "version": "1.0.0"
+  }
+}

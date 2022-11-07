@@ -8,6 +8,10 @@ public class SystemConstant {
      * 超级管理员ID
      */
     public static final long SUPER_ADMIN = 1;
+    /**
+     * 数据标识
+     */
+    public static final String DATA_ROWS = "rows";
 
     /**
      * 通用字典

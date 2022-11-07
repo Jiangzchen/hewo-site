@@ -5,6 +5,7 @@ import org.hewo.core.model.entity.R;
 import org.hewo.core.model.request.ListRequest;
 import org.hewo.core.model.request.ModelRequest;
 import org.hewo.core.model.request.PageRequest;
+import org.hewo.core.utils.ThreadLocalGroup;
 import org.hewo.modules.system.model.dto.SysUserSaveDto;
 import org.hewo.modules.system.model.dto.UpdatePswdDto;
 import org.hewo.modules.system.service.SysUserService;
@@ -34,6 +35,7 @@ public class SysUserController extends AbstractController {
         return sysUserService.infoMe();
     }
 
+    @Post
     @Mapping("list")
     public R page(PageRequest<String> req){
         return sysUserService.list(req.getPage(),req.getPageSize(),req.getData());
@@ -62,5 +64,11 @@ public class SysUserController extends AbstractController {
     @Mapping("reset")
     public R reset(ModelRequest<SysUserSaveDto> req) {
         return sysUserService.reset(req.getData());
+    }
+
+    @Mapping("perms")
+    public R listUserPerms() {
+        String userId = ThreadLocalGroup.getUserId();
+        return sysUserService.listUserPerms(userId);
     }
 }

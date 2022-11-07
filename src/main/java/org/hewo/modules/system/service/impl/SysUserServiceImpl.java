@@ -3,12 +3,15 @@ package org.hewo.modules.system.service.impl;
 import cn.hutool.core.util.IdUtil;
 import cn.hutool.crypto.digest.DigestUtil;
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.baomidou.mybatisplus.solon.plugins.pagination.Page;
 import org.apache.ibatis.solon.annotation.Db;
 import org.hewo.core.constant.SystemConstant;
 import org.hewo.core.exception.BusinessException;
 import org.hewo.core.model.entity.R;
 import org.hewo.core.utils.ThreadLocalGroup;
+import org.hewo.modules.system.mapper.SysMenuMapper;
+import org.hewo.modules.system.mapper.SysRoleMapper;
 import org.hewo.modules.system.mapper.SysUserMapper;
 import org.hewo.modules.system.model.dto.SysUserSaveDto;
 import org.hewo.modules.system.model.dto.UpdatePswdDto;
@@ -18,7 +21,9 @@ import org.hewo.modules.system.service.SysUserService;
 import org.noear.snack.core.utils.StringUtil;
 import org.noear.solon.aspect.annotation.Service;
 
+import java.util.Arrays;
 import java.util.Date;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -26,6 +31,10 @@ import java.util.Set;
 public class SysUserServiceImpl implements SysUserService {
     @Db
     private SysUserMapper sysUserMapper;
+    @Db
+    private SysMenuMapper sysMenuMapper;
+    @Db
+    private SysRoleMapper sysRoleMapper;
 
     @Override
     public R save(SysUserSaveDto req) {
@@ -94,13 +103,27 @@ public class SysUserServiceImpl implements SysUserService {
     }
 
     @Override
-    public Set<String> listUserPerms(String userId) {
-        return null;
+    public R listUserPerms(String userId) {
+        List<String> perms = sysMenuMapper.listUserPerms(userId);
+        Set<String> permsSet = new HashSet<>();
+        for(String perm : perms) {
+            if(StringUtils.isNotBlank(perm)) {
+                permsSet.addAll(Arrays.asList(perm.trim().split(",")));
+            }
+        }
+        return R.msgNotCheckNull(permsSet);
     }
 
     @Override
-    public Set<String> listUserRoles(String userId) {
-        return null;
+    public R listUserRoles(String userId) {
+        List<String> roles = sysRoleMapper.listUserRoles(userId);
+        Set<String> rolesSet = new HashSet<>();
+        for(String role : roles) {
+            if(StringUtils.isNotBlank(role)) {
+                rolesSet.addAll(Arrays.asList(role.trim().split(",")));
+            }
+        }
+        return R.msgNotCheckNull(rolesSet);
     }
 
     @Override
