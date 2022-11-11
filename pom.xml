@@ -33,6 +33,11 @@
 
         <dependency>
             <groupId>org.noear</groupId>
+            <artifactId>solon.hotplug</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.noear</groupId>
             <artifactId>mybatis-plus-extension-solon-plugin</artifactId>
         </dependency>
 
@@ -68,6 +73,13 @@
             <version>5.3.7</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>22.0</version>
+        </dependency>
+
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt</artifactId>
@@ -79,14 +91,6 @@
             <artifactId>h2</artifactId>
             <version>1.4.200</version>
             <scope>compile</scope>
-        </dependency>
-
-        <!-- 引入包，只是调试用 -->
-        <dependency>
-            <groupId>com.github.shalousun</groupId>
-            <artifactId>smart-doc</artifactId>
-            <version>2.4.2</version>
-            <scope>provided</scope>
         </dependency>
 
         <!--邮箱的依赖-->
@@ -102,14 +106,24 @@
         <finalName>${project.name}</finalName>
         <plugins>
             <plugin>
-                <groupId>com.github.shalousun</groupId>
-                <artifactId>smart-doc-maven-plugin</artifactId>
-                <version>2.4.2</version>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>1.2.2</version>
                 <configuration>
-                    <!--指定生成文档的使用的配置文件,配置文件放在自己的项目中-->
-                    <configFile>./src/main/resources/smart-doc.json</configFile>
-                    <!--指定项目名称-->
-                    <projectName>测试</projectName>
+                    <imageName>${project.artifactId}</imageName>
+                    <imageTags>
+                        <imageTag>${project.version}</imageTag>
+                        <imageTag>latest</imageTag>
+                    </imageTags>
+                    <baseImage>adoptopenjdk/openjdk8</baseImage>
+                    <entryPoint>["java", "-jar", "/${project.build.finalName}.jar", "--server.port=8909","--drift=1"]</entryPoint>
+                    <resources>
+                        <resource>
+                            <targetPath>/</targetPath>
+                            <directory>${project.build.directory}</directory>
+                            <include>${project.build.finalName}.jar</include>
+                        </resource>
+                    </resources>
                 </configuration>
             </plugin>
             <plugin>
