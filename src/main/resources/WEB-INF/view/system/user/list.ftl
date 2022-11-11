@@ -18,17 +18,7 @@
             <div class="tile">
                 <div class="tile-body">
                     <div class="table-responsive">
-                        <table class="table table-hover table-bordered" id="sampleTable">
-                            <thead>
-                            <tr>
-                                <th>用户名</th>
-                                <th>邮箱</th>
-                                <th>手机号</th>
-                            </tr>
-                            </thead>
-                            <tbody></tbody>
-                        </table>
-                        <#--<table id="example" class="display" width="100%"></table>-->
+                        <table class="table table-hover table-bordered" id="sampleTable"></table>
                     </div>
                 </div>
             </div>
