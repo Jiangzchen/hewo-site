@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba7c1f34-d6ae-4e40-9d1d-6918090d3ac9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/WEB-INF/static/js/system/user/list.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hewo/modules/article/controller/PmArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hewo/modules/article/controller/PmArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hewo/modules/article/service/PmArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hewo/modules/article/service/PmArticleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hewo/modules/article/service/impl/PmArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hewo/modules/article/service/impl/PmArticleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hewo/modules/system/model/entity/SysMacro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hewo/modules/system/model/entity/SysMacro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/WEB-INF/static/js/hewo-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/WEB-INF/static/js/hewo-api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/WEB-INF/view/system/user/list.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/WEB-INF/view/system/user/list.ftl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +41,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="C:/apache-maven-3.6.1" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../../apache-maven-3.6.1" />
         <option name="userSettingsFile" value="C:\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -59,7 +52,6 @@
   <component name="ProjectId" id="2GZoUOHAr9IHgGFWQ9KnmXiOJhe" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
@@ -116,19 +108,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.App">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.hewo.App" />
-      <module name="hewo-site" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.hewo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="DEPLOY_HOST_RUN_CONFIGURATION" factoryName="Deploy to Host">
       <option name="accountModel" />
       <option name="accountModels" />
@@ -163,6 +142,19 @@
       <option name="uploadType" />
       <method v="2">
         <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/../hewo-site\pom.xml" goal="clean install" />
+      </method>
+    </configuration>
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.hewo.App" />
+      <module name="hewo-site" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.hewo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="hewo-site一键自动部署" type="DEPLOY_HOST_RUN_CONFIGURATION" factoryName="Deploy to Host">
@@ -205,7 +197,6 @@
     </configuration>
     <list>
       <item itemvalue="Application.App" />
-      <item itemvalue="Deploy to Host.hewo-site一键自动部署" />
     </list>
     <recent_temporary>
       <list>
@@ -271,13 +262,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="README.md更新下" />
